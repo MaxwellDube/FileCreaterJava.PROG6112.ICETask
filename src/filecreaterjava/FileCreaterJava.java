@@ -34,6 +34,8 @@ public class FileCreaterJava {
             System.out.println("An error occurred while creating the file.");
             e.printStackTrace();
         }
+        
+        System.out.println(newFile);
     }
     
     
