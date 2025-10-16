@@ -21,7 +21,19 @@ public class FileCreaterJava {
         //GUI for adding file path
         String newFile = JOptionPane.showInputDialog(null, "Where would you like to store the file (Enter Path)");
         
+        File file = new File(newFile);
         
+        try{
+            if(file.createNewFile()){
+                JOptionPane.showMessageDialog(null, "File succesfully created");
+            }else{
+                JOptionPane.showMessageDialog(null, "File already exits");
+                
+            }
+        }catch(IOException e){
+            System.out.println("An error occurred while creating the file.");
+            e.printStackTrace();
+        }
     }
     
     
