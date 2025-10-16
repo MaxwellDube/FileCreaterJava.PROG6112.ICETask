@@ -18,7 +18,7 @@ public class FileCreaterJava {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        //GUI for adding file path
         String newFile = JOptionPane.showInputDialog(null, "Where would you like to store the file (Enter Path)");
         
         
